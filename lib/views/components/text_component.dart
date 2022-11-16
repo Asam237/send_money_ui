@@ -22,7 +22,7 @@ class _TextComponentState extends State<TextComponent> {
         style: TextStyle(
             color: this.widget.color,
             fontSize: 30.0,
-            fontWeight: FontWeight.w700),
+            fontWeight: FontWeight.w800),
       );
     }
     if (this.widget.type == "subTitle") {
@@ -30,14 +30,14 @@ class _TextComponentState extends State<TextComponent> {
         this.widget.text.toString(),
         textAlign: this.widget.centered,
         style: TextStyle(
-            color: widget.color, fontSize: 20.0, fontWeight: FontWeight.w500),
+            color: widget.color, fontSize: 19.0, fontWeight: FontWeight.bold),
       );
     } else {
       return Text(
         textAlign: this.widget.centered,
         this.widget.text.toString(),
         style: TextStyle(
-            color: widget.color, fontSize: 16.0, fontWeight: FontWeight.w400),
+            color: widget.color, fontSize: 16.0, fontWeight: FontWeight.w700),
       );
     }
   }

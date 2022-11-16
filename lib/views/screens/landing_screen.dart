@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:send_money_ui/views/components/button_component.dart';
 import 'package:send_money_ui/views/components/text_component.dart';
+import 'package:send_money_ui/views/screens/home_screen.dart';
+
+import '../../commons/helpers.dart';
 
 class LandingScreen extends StatefulWidget {
   const LandingScreen({Key? key}) : super(key: key);
@@ -43,6 +46,9 @@ class _LandingScreenState extends State<LandingScreen> {
                 Expanded(
                     child: Container(
                   child: ButtonComponent(
+                    onTap: () {
+                      Navs.push(context, HomeScreen(), replace: true);
+                    },
                     title: "Continue",
                     type: "primary",
                   ),
