@@ -4,8 +4,9 @@ class TextComponent extends StatefulWidget {
   final String? text;
   final String? type;
   final Color? color;
+  final TextAlign? centered;
 
-  TextComponent({required this.text, this.type, this.color});
+  TextComponent({required this.text, this.type, this.color, this.centered});
 
   @override
   State<TextComponent> createState() => _TextComponentState();
@@ -17,6 +18,7 @@ class _TextComponentState extends State<TextComponent> {
     if (this.widget.type == "title") {
       return Text(
         this.widget.text.toString(),
+        textAlign: this.widget.centered,
         style: TextStyle(
             color: this.widget.color,
             fontSize: 30.0,
@@ -26,11 +28,13 @@ class _TextComponentState extends State<TextComponent> {
     if (this.widget.type == "subTitle") {
       return Text(
         this.widget.text.toString(),
+        textAlign: this.widget.centered,
         style: TextStyle(
             color: widget.color, fontSize: 20.0, fontWeight: FontWeight.w500),
       );
     } else {
       return Text(
+        textAlign: this.widget.centered,
         this.widget.text.toString(),
         style: TextStyle(
             color: widget.color, fontSize: 16.0, fontWeight: FontWeight.w400),

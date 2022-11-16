@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:send_money_ui/commons/palettes.dart';
 import 'package:send_money_ui/views/components/text_component.dart';
 
@@ -21,6 +22,7 @@ class _ButtonComponentState extends State<ButtonComponent> {
           onTap: this.widget.onTap,
           child: Container(
             width: MediaQuery.of(context).size.width,
+            margin: EdgeInsets.only(right: 5.0),
             padding: EdgeInsets.symmetric(vertical: 15.0),
             decoration: BoxDecoration(
                 color: Palettes.secondary,
@@ -36,7 +38,7 @@ class _ButtonComponentState extends State<ButtonComponent> {
       return InkWell(
           onTap: this.widget.onTap,
           child: Container(
-            margin: EdgeInsets.only(top: 10),
+            margin: EdgeInsets.only(left: 5.0),
             width: MediaQuery.of(context).size.width,
             padding: EdgeInsets.symmetric(vertical: 15.0),
             decoration: BoxDecoration(
