@@ -1,16 +1,4 @@
-# send_money_ui
+# UI Send Money
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![photo_2022-11-16_15-15-38](https://user-images.githubusercontent.com/34966088/202204470-f9b5026f-3ce6-405d-bab7-fd7e9e0a2eee.jpg)
+![photo_2022-11-16_15-15-44](https://user-images.githubusercontent.com/34966088/202204488-26179596-073a-420e-a61a-158f987ae12b.jpg)
