@@ -18,7 +18,9 @@ class _TextComponentState extends State<TextComponent> {
       return Text(
         this.widget.text.toString(),
         style: TextStyle(
-            color: widget.color, fontSize: 30.0, fontWeight: FontWeight.w700),
+            color: this.widget.color,
+            fontSize: 30.0,
+            fontWeight: FontWeight.w700),
       );
     }
     if (this.widget.type == "subTitle") {
@@ -31,7 +33,7 @@ class _TextComponentState extends State<TextComponent> {
       return Text(
         this.widget.text.toString(),
         style: TextStyle(
-            color: widget.color, fontSize: 18.0, fontWeight: FontWeight.w300),
+            color: widget.color, fontSize: 16.0, fontWeight: FontWeight.w400),
       );
     }
   }

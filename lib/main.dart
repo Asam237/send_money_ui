@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:send_money_ui/views/components/button_component.dart';
 import 'package:send_money_ui/views/components/text_component.dart';
 
 void main() {
@@ -48,6 +49,19 @@ class _LandingScreenState extends State<LandingScreen> {
           TextComponent(
             text: "Hello default",
           ),
+          Container(
+            width: 200,
+            child: ButtonComponent(
+              type: "primary",
+              title: "Continue",
+            ),
+          ),
+          Container(
+            width: 200,
+            child: ButtonComponent(
+              title: "Continue",
+            ),
+          )
         ],
       )),
     );
