@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:send_money_ui/views/components/text_component.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,8 +34,22 @@ class _LandingScreenState extends State<LandingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Image.asset("assets/imgs/cards.png"),
-      ),
+          child: Column(
+        children: [
+          Image.asset("assets/imgs/cards.png"),
+          TextComponent(
+            text: "Hello Title",
+            type: "title",
+          ),
+          TextComponent(
+            text: "Hello Sub Title",
+            type: "subTitle",
+          ),
+          TextComponent(
+            text: "Hello default",
+          ),
+        ],
+      )),
     );
   }
 }
